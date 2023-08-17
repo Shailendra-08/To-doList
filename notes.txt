@@ -1,0 +1,55 @@
+// need to downlaod mongoose package
+
+ npm i mongoose
+
+ // mention the header file
+
+ const mongoose = require("mongoose");
+
+ // make a connection 
+
+ mongoose.connect("mongodb://localhost:27017/nameofdb",{useNewUrlParser: true});
+
+ //then make a schema 
+
+ const schemaname = new mongoose.Schema{   // need to mention  "new mongoose.Schema" or it will give error
+    //name= string,
+    id = int,
+    branch= string
+ }
+
+ //then make a model
+
+ const = mongoose.model(
+    <"SingularCollectionName">,
+    <schemaName>
+
+
+ ///   const Item = mongoose.model("Item",itemsSchema);
+   
+
+ );
+
+
+// start the mongodb server in the machine using the command
+
+mongod 
+
+// then split the terminal and type the command
+
+mongo
+
+//then inside that various other command are mention below :
+
+show dbs
+
+use databasename
+
+show collections
+
+db.collectionsname,find({})   // it will mention all the stuff inside the collections of particular item.
+
+db // it will tell you in which database you are working
+
+db.dropDatabase()    // these will drop the database on which you are working
+
